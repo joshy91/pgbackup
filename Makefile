@@ -1,5 +1,10 @@
+PYTHON = python3
+TEST_PATH=./
+
 default: test
 
-install: pipenv install --dev --skip-lock
+install:
+	pipenv install --dev --skip-lock
 
-test: PYTHONPATH=./src pytest
+test:
+	PYTHONPATH=./src pytest
